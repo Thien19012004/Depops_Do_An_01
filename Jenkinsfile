@@ -138,11 +138,4 @@ pipeline {
             }
         }
     }
-
-    post {
-        always {
-            junit '**/target/surefire-reports/*.xml'
-            archiveArtifacts artifacts: '**/target/site/jacoco/**', allowEmptyArchive: true
-        }
-    }
 }
