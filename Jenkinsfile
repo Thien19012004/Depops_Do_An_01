@@ -1,7 +1,7 @@
 pipeline {
     agent any
     environment {
-        CHANGED_SERVICES = ''
+        CHANGED_SERVICES = 'vets-service'
     }
 
     stages {
